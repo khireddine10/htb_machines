@@ -1,0 +1,32 @@
+Script started on 2021-08-04 22:44:32+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="79" LINES="21"]
+(B[m(B[m(B[m(B[m(B[m]0;root:../Desktop/sec/linuxpriv
+[0;1;97;44m root [0;34;104m[0;1;97;104m khirou [0;94;107m[0;90;1;107m ../Desktop/sec/linuxpriv [0;97;49m[1;38;5;74m ls
+(B[mkhirou.ovpn  linpeas.sh  linux-exploit-suggester.sh  sudo.py  typescript
+(B[m]0;root:../Desktop/sec/linuxpriv
+[0;1;97;44m root [0;34;104m[0;1;97;104m khirou [0;94;107m[0;90;1;107m ../Desktop/sec/linuxpriv [0;97;49m[1;38;5;74m h[Kecho "hh[Khell[K[K[K[Kl[Kl[Kello wolrd[K[K[Krld":
+(B[mhello world:
+(B[m]0;root:../Desktop/sec/linuxpriv
+[0;1;97;44m root [0;34;104m[0;1;97;104m khirou [0;94;107m[0;90;1;107m ../Desktop/sec/linuxpriv [0;97;49m[1;38;5;74m exit
+(B[mexit
+
+Script done on 2021-08-04 22:45:35+01:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2021-08-04 22:47:46+01:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="79" LINES="21"]
+(B[m(B[m(B[m(B[m(B[m]0;root:../Desktop/sec/linuxpriv
+[0;1;97;44m root [0;34;104m[0;1;97;104m khirou [0;94;107m[0;90;1;107m ../Desktop/sec/linuxpriv [0;97;49m[1;38;5;74m nik 7ayari
+(B[m
+Command 'nik' not found, did you mean:
+
+  command 'ink' from deb ink (0.5.3-1)
+  command 'ni6' from deb ipv6toolkit (2.0-1)
+  command 'nim' from deb nim (1.0.6-1)
+  command 'nik4' from deb nik4 (1.6-6build1)
+
+Try: apt install <deb name>
+
+(B[m]0;root:../Desktop/sec/linuxpriv
+[0;1;97;44m root [0;34;104m[0;1;97;104m khirou [0;94;107m[0;90;1;107m ../Desktop/sec/linuxpriv [0;97;49m[1;38;5;74m clar[K[Kear
+(B[m[H[2J[3J(B[m]0;root:../Desktop/sec/linuxpriv
+[0;1;97;44m root [0;34;104m[0;1;97;104m khirou [0;94;107m[0;90;1;107m ../Desktop/sec/linuxpriv [0;97;49m[1;38;5;74m l[Kexit
+(B[mexit
+
+Script done on 2021-08-04 22:48:14+01:00 [COMMAND_EXIT_CODE="0"]

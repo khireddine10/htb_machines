@@ -1,0 +1,53 @@
+# Nmap 7.80 scan initiated Tue Aug 10 01:59:12 2021 as: nmap -sV -sC -Pn -oN NMAP -vv 10.10.10.245
+Increasing send delay for 10.10.10.245 from 0 to 5 due to 380 out of 1266 dropped probes since last increase.
+Nmap scan report for 10.10.10.245
+Host is up, received user-set (0.11s latency).
+Scanned at 2021-08-10 01:59:13 CET for 122s
+Not shown: 997 closed ports
+Reason: 997 resets
+PORT   STATE SERVICE REASON         VERSION
+21/tcp open  ftp     syn-ack ttl 63 vsftpd 3.0.3
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack ttl 63 gunicorn
+| fingerprint-strings: 
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Server: gunicorn
+|     Date: Tue, 10 Aug 2021 01:13:02 GMT
+|     Connection: close
+|     Content-Type: text/html; charset=utf-8
+|     Allow: OPTIONS, HEAD, GET
+|     Content-Length: 0
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Content-Type: text/html
+|     Content-Length: 196
+|     <html>
+|     <head>
+|     <title>Bad Request</title>
+|     </head>
+|     <body>
+|     <h1><p>Bad Request</p></h1>
+|     Invalid HTTP Version &#x27;Invalid HTTP Version: &#x27;RTSP/1.0&#x27;&#x27;
+|     </body>
+|_    </html>
+|_http-server-header: gunicorn
+|_http-title: Security Dashboard
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.80%I=7%D=8/10%Time=6111CF7E%P=x86_64-pc-linux-gnu%r(HTTP
+SF:Options,B3,"HTTP/1\.0\x20200\x20OK\r\nServer:\x20gunicorn\r\nDate:\x20T
+SF:ue,\x2010\x20Aug\x202021\x2001:13:02\x20GMT\r\nConnection:\x20close\r\n
+SF:Content-Type:\x20text/html;\x20charset=utf-8\r\nAllow:\x20OPTIONS,\x20H
+SF:EAD,\x20GET\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,121,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nContent-Type:\x
+SF:20text/html\r\nContent-Length:\x20196\r\n\r\n<html>\n\x20\x20<head>\n\x
+SF:20\x20\x20\x20<title>Bad\x20Request</title>\n\x20\x20</head>\n\x20\x20<
+SF:body>\n\x20\x20\x20\x20<h1><p>Bad\x20Request</p></h1>\n\x20\x20\x20\x20
+SF:Invalid\x20HTTP\x20Version\x20&#x27;Invalid\x20HTTP\x20Version:\x20&#x2
+SF:7;RTSP/1\.0&#x27;&#x27;\n\x20\x20</body>\n</html>\n");
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 10 02:01:15 2021 -- 1 IP address (1 host up) scanned in 123.37 seconds

@@ -1,0 +1,29 @@
+enumeration
+
+--- ftp ---
+	Connected to 10.10.10.245.
+	220 (vsFTPd 3.0.3)
+	Name (10.10.10.245:khirou): anonymous
+	331 Please specify the password. 
+	Password: blank password
+	530 Login incorrect.
+	Login failed.
+
+--- web server captured pcap ---
+	/download/0
+	we found that it contain ftp/ssh crentials
+	nathan:Buck3tH4TF0RM3!
+when login with ftp: we found that it's the nathan user folder.
+
+
+
+--- web server ---
+in the pcap section:
+	the 9 is increment each time we issue an request this indecated it's and id: http://10.10.10.245/data/9
+
+in the page there is a hidden content
+
+users:
+	- nathan
+
+--- gunicorn --- 

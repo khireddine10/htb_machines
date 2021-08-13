@@ -1,0 +1,14 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2021-05-04 00:10 BST
+Nmap scan report for ip-10-10-17-46.eu-west-1.compute.internal (10.10.17.46)
+Host is up (0.014s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: 02:CC:55:01:A4:AF (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 17.44 seconds

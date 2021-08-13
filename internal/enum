@@ -1,0 +1,20 @@
+-- port scanning --
+ssh 21/tcp OpenSSH 7.6p1 Ubuntu 4ubuntu0.3
+80/tcp http    Apache httpd 2.4.29
+
+
+-- gobuster --
+/index.html (Status: 200)
+/blog (Status: 301)
+/wordpress (Status: 301)
+/javascript (Status: 301)
+/phpmyadmin (Status: 301)
+/server-status (Status: 403)
+
+-- web enum --
+  - blog:
+        blogurl: http://internal.thm/blog/index.php/2020/08/03/hello-world/
+        http://www.internal.thm/blog/?s=azeaze ----> possible sqlinjection
+        http://internal.thm/blog/?s=dasdad
+	login page: http://internal.thm/blog/wp-login.php --- user:admin
+

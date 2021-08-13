@@ -1,0 +1,49 @@
+privelege escalation enumeration:
+
+--- files and users ---
+Writable folder: /dev/shm
+Sudo version 1.8.21p2
+mail folder: MAIL=/var/mail/falconfeast
+user; falconfeast
+ssh config file= /usr/share/openssh/sshd_config
+/home/falconfeast/.sudo_as_admin_successful ******
+
+--- root services ---
+root: /usr/bin/python3 /usr/local/bin/flask run --host=0.0.0.0 --port=80
+root: /usr/sbin/cron -f
+mysql: /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid
+
+-- password files ---
+passwd file: /etc/pam.d/passwd
+passwd file: /etc/passwd
+passwd file: /usr/share/bash-completion/completions/passwd
+passwd file: /usr/share/lintian/overrides/passwd
+
+-- suid/sgid --
+/usr/bin/chsh (Unknown SUID binary)
+/bin/fusermount (Unknown SUID binary)
+/usr/bin/at
+/usr/bin/sudo
+/usr/bin/gpasswd
+/usr/bin/at
+/usr/bin/newgidmap
+/usr/bin/pkexec
+/usr/bin/traceroute6.iputils
+/usr/bin/newuidmap
+/usr/bin/passwd
+/usr/bin/chfn
+/usr/bin/newgrp
+/usr/bin/chsh
+/bin/fusermount
+/bin/umount
+/bin/ping
+/bin/mount
+/bin/su
+
+
+
+
+/usr/lib/snapd/snap-confine (Unknown SGID binary)
+/usr/bin/strings: '/usr/lib/snapd/snap-confine"': No such file
+  --- Trying to execute /usr/lib/snapd/snap-confine" with strace in order to look for hijackable libraries...
+/usr/bin/strace: Can't stat '/usr/lib/snapd/snap-confine"': No such file or directory

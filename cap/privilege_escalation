@@ -1,0 +1,62 @@
+privilege escalation 
+
+-rwsr-sr-x 1 daemon daemon           55K Nov 12  2018 /usr/bin/at  --->  RTru64_UNIX_4.0g(CVE-2002-1614)
+-rwsr-xr-x 1 root   root             40K Mar 22  2019 /snap/core18/2074/usr/bin/newgrp  --->  HP-UX_10.20
+-rwsr-xr-x 1 root   root             31K Aug 16  2019 /usr/bin/pkexec  --->  Linux4.10_to_5.1.17(CVE-2019-13272)/rhel_6(CVE-2011-1485)
+-rwsr-xr-x 1 root   root             39K Jul 21  2020 /usr/bin/umount  --->  BSD/Linux(08-1996)
+-rwsr-xr-x 1 root   root             55K Jul 21  2020 /usr/bin/mount  --->  Apple_Mac_OSX(Lion)_Kernel_xnu-1699.32.7_except_xnu-1699.24.8
+-rwsr-xr-x 1 root   root            163K Jan 19  2021 /usr/bin/sudo  --->  check_if_the_sudo_version_is_vulnerable
+-rwsr-xr-x 1 root   root            109K Jun 15 14:26 /snap/snapd/12398/usr/lib/snapd/snap-confine  --->  Ubuntu_snapd<2.37_dirty_sock_Local_Privilege_Escalation(CVE-2019-7304)
+
+/usr/bin/python3.8 = cap_setuid,cap_net_bind_service+eip
+/home/nathan/.bash_history
+
+-rwsr-sr-x 1 daemon daemon 55K Nov 12  2018 /usr/bin/at (Unknown SGID binary)
+
+
+
+
+
+╔══════════╣ Searching uncommon passwd files (splunk)
+passwd file: /etc/pam.d/passwd
+passwd file: /etc/passwd
+passwd file: /snap/core18/2066/etc/pam.d/passwd
+passwd file: /snap/core18/2066/etc/passwd
+passwd file: /snap/core18/2066/usr/share/bash-completion/completions/passwd
+passwd file: /snap/core18/2066/usr/share/lintian/overrides/passwd
+passwd file: /snap/core18/2066/var/lib/extrausers/passwd
+passwd file: /snap/core18/2074/etc/pam.d/passwd
+passwd file: /snap/core18/2074/etc/passwd
+passwd file: /snap/core18/2074/usr/share/bash-completion/completions/passwd
+passwd file: /snap/core18/2074/usr/share/lintian/overrides/passwd
+passwd file: /snap/core18/2074/var/lib/extrausers/passwd
+passwd file: /usr/share/bash-completion/completions/passwd
+passwd file: /usr/share/lintian/overrides/passwd
+
+ /home/nathan/.gnupg
+ /home/nathan/.viminfo+
+
+
+
+ ╔══════════╣ Analyzing Other Interesting Files Files (limit 70)
+-rw-r--r-- 1 root root 3771 Feb 25  2020 /etc/skel/.bashrc
+-rw-r--r-- 1 nathan nathan 3771 Feb 25  2020 /home/nathan/.bashrc
+-rw-r--r-- 1 root root 3771 Apr  4  2018 /snap/core18/2066/etc/skel/.bashrc
+-rw-r--r-- 1 root root 3771 Apr  4  2018 /snap/core18/2074/etc/skel/.bashrc
+
+
+Files with capabilities (limited to 50):
+		/usr/bin/python3.8 = cap_setuid,cap_net_bind_service+eip
+cut: '"': No such file or directory
+/usr/bin/ping = cap_net_raw+ep
+cut: '"': No such file or directory
+/usr/bin/traceroute6.iputils = cap_net_raw+ep
+cut: '"': No such file or directory
+/usr/bin/mtr-packet = cap_net_raw+ep
+cut: '"': No such file or directory
+/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-ptp-helper = cap_net_bind_service,cap_net_admin+ep
+cut: '"': No such file or directory
+
+
+user flag: c222cdab6cacd2f10532e478b012f7da
+root flag: fd557b991dfc9f4feab650d2c8a7a94c

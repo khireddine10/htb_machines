@@ -1,0 +1,36 @@
+privilege escalation:
+--- suid/sgid: ---
+	/usr/bin/at
+
+
+cve:
+	-rwsr-sr-x 1 daemon daemon 55K Nov 12  2018 /usr/bin/at  --->  RTru64_UNIX_4.0g(CVE-2002-1614)
+
+	/snap-confine  --->  Ubuntu_snapd<2.37_dirty_sock_Local_Privilege_Escalation(CVE-2019-7304)
+
+
+check crontab
+
+
+Matching Defaults entries for james on knife:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+	User james may run the following commands on knife:
+    (root) NOPASSWD: /usr/bin/knife  -- this is point of privilege escalation gtfobis site
+
+
+Analyzing Cloud Credentials Files (limit 70)
+drwxr-xr-x 2 root root 4096 May 18 13:20 /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/ms_rest-0.7.6/lib/ms_rest/credentials
+drwxr-xr-x 2 root root 4096 May  7 11:03 /opt/chef-workstation/embedded/lib/ruby/gems/2.7.0/gems/ms_rest_azure-0.12.0/lib/ms_rest_azure/credentials
+drwxr-xr-x 2 root root 4096 May 18 13:20 /opt/opscode/embedded/service/gem/ruby/2.6.0/gems/doorkeeper-4.4.3/lib/doorkeeper/oauth/client_credentials
+drwxr-xr-x 2 root root 4096 May 18 13:20 /opt/opscode/embedded/service/gem/ruby/2.6.0/gems/doorkeeper-4.4.3/spec/lib/oauth/client_credentials
+
+
+
+-rw-r--r-- 1 root root 3559 Jan 18  2021 /snap/core18/1997/etc/cloud/cloud.cfg
+     lock_passwd: True
+-rw-r--r-- 1 root root 3559 May 11 17:24 /snap/core18/2074/etc/cloud/cloud.cfg
+     lock_passwd: True
+
+ruby:
+	GEM_HOME

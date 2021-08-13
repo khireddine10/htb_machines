@@ -1,0 +1,10 @@
+enumeration:
+the web server run php
+	index.php
+
+http://10.10.10.242/server-status: permission required
+
+php8.1-div backdoor version cve:
+		https://github.com/flast101/php-8.1.0-dev-backdoor-rce/blob/main/revshell_php_8.1.0-dev.py
+		https://www.exploit-db.com/exploits/49933 
+

@@ -1,0 +1,5 @@
+LFI = ../../../etc/passwd
+shadow and passwd are readable
+
+web server: 
+	Werkzeug/0.16.0 Python/3.6.9
