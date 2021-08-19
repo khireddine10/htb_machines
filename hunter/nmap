@@ -1,0 +1,37 @@
+# Nmap 7.80 scan initiated Wed Aug 18 13:18:43 2021 as: nmap -sV -sC -oN nmap -vv 10.10.11.100
+Increasing send delay for 10.10.11.100 from 0 to 5 due to 172 out of 572 dropped probes since last increase.
+Increasing send delay for 10.10.11.100 from 320 to 640 due to 11 out of 33 dropped probes since last increase.
+Increasing send delay for 10.10.11.100 from 640 to 1000 due to 11 out of 35 dropped probes since last increase.
+Nmap scan report for 10.10.11.100
+Host is up, received echo-reply ttl 63 (0.20s latency).
+Scanned at 2021-08-18 13:18:44 CET for 441s
+Not shown: 983 closed ports
+Reason: 983 resets
+PORT      STATE    SERVICE        REASON         VERSION
+22/tcp    open     ssh            syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+80/tcp    open     http           syn-ack ttl 63 Apache httpd 2.4.41 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 556F31ACD686989B1AFCF382C05846AA
+| http-methods: 
+|_  Supported Methods: HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Bounty Hunters
+1001/tcp  filtered webpush        no-response
+1024/tcp  filtered kdm            no-response
+1107/tcp  filtered isoipsigport-2 no-response
+1151/tcp  filtered unizensus      no-response
+1783/tcp  filtered unknown        no-response
+3737/tcp  filtered xpanel         no-response
+3827/tcp  filtered netmpi         no-response
+3945/tcp  filtered emcads         no-response
+5414/tcp  filtered statusd        no-response
+8086/tcp  filtered d-s-n          no-response
+10778/tcp filtered unknown        no-response
+14000/tcp filtered scotty-ft      no-response
+21571/tcp filtered unknown        no-response
+44176/tcp filtered unknown        no-response
+57294/tcp filtered unknown        no-response
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 18 13:26:05 2021 -- 1 IP address (1 host up) scanned in 441.15 seconds

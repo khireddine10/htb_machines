@@ -1,0 +1,25 @@
+-- enumeration --
+10.10.10.248
+
+
+web port 80:
+	server: Information Services (IIS) MircorostIIS/10
+
+open ports:
+		53/tcp   open  domain
+		80/tcp   open  http
+		135/tcp  open  msrpc
+		139/tcp  open  netbios-ssn
+		445/tcp  open  microsoft-ds
+	
+	88/tcp   open  kerberos-sec
+	464/tcp  open  kpasswd5
+	389/tcp  open  ldap
+	593/tcp  open  http-rpc-epmap
+	636/tcp  open  ldapssl
+	3268/tcp open  globalcatLDAP
+	3269/tcp open  globalcatLDAPssl
+
+-- smb enumeration --
+no shares
+no anynonymous login

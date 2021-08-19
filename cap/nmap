@@ -1,0 +1,1 @@
+# Nmap 7.80 scan initiated Wed Aug 18 13:15:00 2021 as: nmap -sV -sC -oN nmap -vv 10.10.11.100

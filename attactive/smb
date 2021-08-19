@@ -1,0 +1,96 @@
+smb
+
+WARNING: polenum.py is not in your path.  Check that package is installed and your PATH is sane.
+WARNING: ldapsearch is not in your path.  Check that package is installed and your PATH is sane.
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Mon Aug 16 21:39:44 2021
+
+ ========================== 
+|    Target Information    |
+ ========================== 
+Target ........... 10.10.12.89
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ =================================================== 
+|    Enumerating Workgroup/Domain on 10.10.12.89    |
+ =================================================== 
+[+] Got domain/workgroup name: THM-AD
+
+ =========================================== 
+|    Nbtstat Information for 10.10.12.89    |
+ =========================================== 
+Looking up status of 10.10.12.89
+	ATTACKTIVEDIREC <20> -         B <ACTIVE>  File Server Service
+	ATTACKTIVEDIREC <00> -         B <ACTIVE>  Workstation Service
+	THM-AD          <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+	THM-AD          <1c> - <GROUP> B <ACTIVE>  Domain Controllers
+	THM-AD          <1b> -         B <ACTIVE>  Domain Master Browser
+
+	MAC Address = 02-8C-1A-4E-40-A1
+
+ ==================================== 
+|    Session Check on 10.10.12.89    |
+ ==================================== 
+[+] Server 10.10.12.89 allows sessions using username '', password ''
+
+ ========================================== 
+|    Getting domain SID for 10.10.12.89    |
+ ========================================== 
+Domain Name: THM-AD
+Domain Sid: S-1-5-21-3591857110-2884097990-301047963
+[+] Host is part of a domain (not a workgroup)
+
+ ===================================== 
+|    OS information on 10.10.12.89    |
+ ===================================== 
+Use of uninitialized value $os_info in concatenation (.) or string at /root/Desktop/Tools/Miscellaneous/enum4linux.pl line 464.
+[+] Got OS info for 10.10.12.89 from smbclient: 
+[+] Got OS info for 10.10.12.89 from srvinfo:
+Could not initialise srvsvc. Error was NT_STATUS_ACCESS_DENIED
+
+ ============================ 
+|    Users on 10.10.12.89    |
+ ============================ 
+[E] Couldn't find users using querydispinfo: NT_STATUS_ACCESS_DENIED
+
+[E] Couldn't find users using enumdomusers: NT_STATUS_ACCESS_DENIED
+
+ ======================================== 
+|    Share Enumeration on 10.10.12.89    |
+ ======================================== 
+WARNING: The "syslog" option is deprecated
+smb1cli_req_writev_submit: called for dialect[SMB3_11] server[10.10.12.89]
+
+	Sharename       Type      Comment
+	---------       ----      -------
+Error returning browse list: NT_STATUS_REVISION_MISMATCH
+Reconnecting with SMB1 for workgroup listing.
+Connection to 10.10.12.89 failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
+Failed to connect with SMB1 -- no workgroup available
+
+[+] Attempting to map shares on 10.10.12.89
+
+ =================================================== 
+|    Password Policy Information for 10.10.12.89    |
+ =================================================== 
+[E] Dependent program "polenum.py" not present.  Skipping this check.  Download polenum from http://labs.portcullis.co.uk/application/polenum/
+
+
+ ============================= 
+|    Groups on 10.10.12.89    |
+ ============================= 
+
+[+] Getting builtin groups:
+
+[+] Getting builtin group memberships:
+
+[+] Getting local groups:
+
+[+] Getting local group memberships:
+
+[+] Getting domain groups:
+
+[+] Getting domain group memberships:

